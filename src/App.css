@@ -1,4 +1,39 @@
-#root {
+body {
+  margin: 0;
   height: 100%;
 }
 
+#root {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+#app {
+  height: 100%;
+  display: grid;
+  background-color: black;
+  grid-template-rows: auto;
+}
+
+#header {
+  color: 'white';
+  height: calc(100% - 5px);
+  margin: 5px 5px 0px 5px;
+  border-radius: 5px;
+}
+
+#game-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  min-height: 300px;
+}
+
+.cell {
+  margin: 0px;
+  color: 'white';
+  display: grid;
+}
